@@ -1,6 +1,6 @@
-language: python
+language: c
 
-# Default linux jobs
+# Default windows jobs
 os: windows
 
 script:

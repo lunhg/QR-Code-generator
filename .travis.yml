@@ -5,8 +5,8 @@ os: windows
 
 script:
   # https://travis-ci.community/t/using-cl-exe-for-32-and-64-bits/1905/2
-  - choco install visualstudio2017-workload-vctools -y
-  - cl.exe /D_USRDLL /D_WINDLL qrcodegen.c /link /DLL /OUT:qrcodegen.dll
+  - choco install mingw32
+  - mingw32-make all
 
 # don't notify me when things fail
 notifications:

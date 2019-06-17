@@ -4,10 +4,12 @@ language: c
 os: windows
 
 before_script:
-  - CL /HELP
+  - gcc qrcodegen.c
+  
 script:
   # https://travis-ci.community/t/using-cl-exe-for-32-and-64-bits/1905/2
-  - CL /LDd ./c/qrcodegen.c
+  - make all
+  
 
 # don't notify me when things fail
 notifications:

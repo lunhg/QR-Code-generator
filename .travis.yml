@@ -5,8 +5,7 @@ os: windows
 
 script:
   # https://travis-ci.community/t/using-cl-exe-for-32-and-64-bits/1905/2
-  - choco install mingw32
-  - mingw32-make all
+  - cl.exe /LD ./c/qrcodegen.c
 
 # don't notify me when things fail
 notifications:

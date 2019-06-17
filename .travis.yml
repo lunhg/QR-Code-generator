@@ -3,9 +3,11 @@ language: c
 # Default windows jobs
 os: windows
 
+before_script:
+  - CL /HELP
 script:
   # https://travis-ci.community/t/using-cl-exe-for-32-and-64-bits/1905/2
-  - cl.exe /LD ./c/qrcodegen.c
+  - CL /LDd ./c/qrcodegen.c
 
 # don't notify me when things fail
 notifications:

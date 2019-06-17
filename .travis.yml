@@ -2,9 +2,6 @@ language: c
 
 # Default windows jobs
 os: windows
-
-before_script:
-  - gcc ./c/qrcodegen-demo.c
   
 script:
   # https://travis-ci.community/t/using-cl-exe-for-32-and-64-bits/1905/2

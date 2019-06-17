@@ -5,7 +5,7 @@ os: windows
   
 script:
   # https://travis-ci.community/t/using-cl-exe-for-32-and-64-bits/1905/2
-  - make all
+  - mingw32-make.exe Makefile all
   
 
 # don't notify me when things fail

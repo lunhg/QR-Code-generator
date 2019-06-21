@@ -1,10 +1,12 @@
 language: c
 
-# Default linux jobs
+# Default windows jobs
 os: windows
-
+  
 script:
-  - cl.exe /D_USRDLL /D_WINDLL qrcodegen.h qrcodegen.c qrcodegen-worker.c qrcodegen-test.c qrcodegen-demo.c /link /DLL /OUT:<qrcodegen.dll
+  # https://travis-ci.community/t/using-cl-exe-for-32-and-64-bits/1905/2
+  - mingw32-make.exe ./c/Makefile qrcodegen-test
+  
 
 # don't notify me when things fail
 notifications:

@@ -41,7 +41,7 @@ static void printQr(const uint8_t qrcode[]);
 
 
 // The main application program.
-int main(void) {
+int WinMain(void) {
 	doBasicDemo();
 	doVarietyDemo();
 	doSegmentDemo();
